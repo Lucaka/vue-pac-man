@@ -6,6 +6,12 @@
   margin-left: auto;
   margin-right: auto;
 
+}
+
+.scene-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .start {
     color: white;
     background-color: transparent;
@@ -24,8 +30,35 @@
   }
 }
 
-.scene-start {
+.gameover {
+  width: $sceneWidth;
+  height: $sceneHeight;
+  position: fixed;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  .gameover__button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font: inherit;
+    font-size: 4.5em;
+    cursor: pointer;
+    transition: all .3s;
+
+
+    z-index: 10;
+  }
+  .gameover__button:hover {
+    font-size: 5em;
+  }
+  .gameover__button:active {
+    font-size: 4.5em;
+  }
 }
+

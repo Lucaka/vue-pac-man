@@ -18,3 +18,12 @@
     transform: rotate(0);
   }
 }
+
+
+.ghost {
+  position: absolute;
+  .ghost-detail {
+    width: $characterWidth;
+    height: $characterHeight;
+  }
+}

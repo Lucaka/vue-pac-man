@@ -1,6 +1,7 @@
 {
-  mode: 'development',
+  mode: 'production',
   context: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man',
+  devtool: 'source-map',
   node: {
     setImmediate: false,
     process: 'mock',
@@ -12,9 +13,9 @@
   },
   output: {
     path: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\dist',
-    filename: 'js/[name].js',
+    filename: 'js/[name].[contenthash:8].js',
     publicPath: '',
-    chunkFilename: 'js/[name].js'
+    chunkFilename: 'js/[name].[contenthash:8].js'
   },
   resolve: {
     alias: {
@@ -56,7 +57,7 @@
             loader: 'cache-loader',
             options: {
               cacheDirectory: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\.cache\\vue-loader',
-              cacheIdentifier: '7f6b03c9'
+              cacheIdentifier: '254118c9'
             }
           },
           /* config.module.rule('vue').use('vue-loader') */
@@ -67,7 +68,7 @@
                 whitespace: 'condense'
               },
               cacheDirectory: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\.cache\\vue-loader',
-              cacheIdentifier: '7f6b03c9'
+              cacheIdentifier: '254118c9'
             }
           }
         ]
@@ -185,12 +186,12 @@
           {
             resourceQuery: /module/,
             use: [
-              /* config.module.rule('css').oneOf('vue-modules').use('vue-style-loader') */
+              /* config.module.rule('css').oneOf('vue-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('css').oneOf('vue-modules').use('css-loader') */
@@ -217,12 +218,12 @@
           {
             resourceQuery: /\?vue/,
             use: [
-              /* config.module.rule('css').oneOf('vue').use('vue-style-loader') */
+              /* config.module.rule('css').oneOf('vue').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('css').oneOf('vue').use('css-loader') */
@@ -246,12 +247,12 @@
           {
             test: /\.module\.\w+$/,
             use: [
-              /* config.module.rule('css').oneOf('normal-modules').use('vue-style-loader') */
+              /* config.module.rule('css').oneOf('normal-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('css').oneOf('normal-modules').use('css-loader') */
@@ -277,12 +278,12 @@
           /* config.module.rule('css').oneOf('normal') */
           {
             use: [
-              /* config.module.rule('css').oneOf('normal').use('vue-style-loader') */
+              /* config.module.rule('css').oneOf('normal').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('css').oneOf('normal').use('css-loader') */
@@ -312,12 +313,12 @@
           {
             resourceQuery: /module/,
             use: [
-              /* config.module.rule('postcss').oneOf('vue-modules').use('vue-style-loader') */
+              /* config.module.rule('postcss').oneOf('vue-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('postcss').oneOf('vue-modules').use('css-loader') */
@@ -344,12 +345,12 @@
           {
             resourceQuery: /\?vue/,
             use: [
-              /* config.module.rule('postcss').oneOf('vue').use('vue-style-loader') */
+              /* config.module.rule('postcss').oneOf('vue').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('postcss').oneOf('vue').use('css-loader') */
@@ -373,12 +374,12 @@
           {
             test: /\.module\.\w+$/,
             use: [
-              /* config.module.rule('postcss').oneOf('normal-modules').use('vue-style-loader') */
+              /* config.module.rule('postcss').oneOf('normal-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('postcss').oneOf('normal-modules').use('css-loader') */
@@ -404,12 +405,12 @@
           /* config.module.rule('postcss').oneOf('normal') */
           {
             use: [
-              /* config.module.rule('postcss').oneOf('normal').use('vue-style-loader') */
+              /* config.module.rule('postcss').oneOf('normal').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('postcss').oneOf('normal').use('css-loader') */
@@ -439,12 +440,12 @@
           {
             resourceQuery: /module/,
             use: [
-              /* config.module.rule('scss').oneOf('vue-modules').use('vue-style-loader') */
+              /* config.module.rule('scss').oneOf('vue-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('scss').oneOf('vue-modules').use('css-loader') */
@@ -478,12 +479,12 @@
           {
             resourceQuery: /\?vue/,
             use: [
-              /* config.module.rule('scss').oneOf('vue').use('vue-style-loader') */
+              /* config.module.rule('scss').oneOf('vue').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('scss').oneOf('vue').use('css-loader') */
@@ -514,12 +515,12 @@
           {
             test: /\.module\.\w+$/,
             use: [
-              /* config.module.rule('scss').oneOf('normal-modules').use('vue-style-loader') */
+              /* config.module.rule('scss').oneOf('normal-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('scss').oneOf('normal-modules').use('css-loader') */
@@ -552,12 +553,12 @@
           /* config.module.rule('scss').oneOf('normal') */
           {
             use: [
-              /* config.module.rule('scss').oneOf('normal').use('vue-style-loader') */
+              /* config.module.rule('scss').oneOf('normal').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('scss').oneOf('normal').use('css-loader') */
@@ -594,12 +595,12 @@
           {
             resourceQuery: /module/,
             use: [
-              /* config.module.rule('sass').oneOf('vue-modules').use('vue-style-loader') */
+              /* config.module.rule('sass').oneOf('vue-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('sass').oneOf('vue-modules').use('css-loader') */
@@ -636,12 +637,12 @@
           {
             resourceQuery: /\?vue/,
             use: [
-              /* config.module.rule('sass').oneOf('vue').use('vue-style-loader') */
+              /* config.module.rule('sass').oneOf('vue').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('sass').oneOf('vue').use('css-loader') */
@@ -675,12 +676,12 @@
           {
             test: /\.module\.\w+$/,
             use: [
-              /* config.module.rule('sass').oneOf('normal-modules').use('vue-style-loader') */
+              /* config.module.rule('sass').oneOf('normal-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('sass').oneOf('normal-modules').use('css-loader') */
@@ -716,12 +717,12 @@
           /* config.module.rule('sass').oneOf('normal') */
           {
             use: [
-              /* config.module.rule('sass').oneOf('normal').use('vue-style-loader') */
+              /* config.module.rule('sass').oneOf('normal').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('sass').oneOf('normal').use('css-loader') */
@@ -761,12 +762,12 @@
           {
             resourceQuery: /module/,
             use: [
-              /* config.module.rule('less').oneOf('vue-modules').use('vue-style-loader') */
+              /* config.module.rule('less').oneOf('vue-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('less').oneOf('vue-modules').use('css-loader') */
@@ -800,12 +801,12 @@
           {
             resourceQuery: /\?vue/,
             use: [
-              /* config.module.rule('less').oneOf('vue').use('vue-style-loader') */
+              /* config.module.rule('less').oneOf('vue').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('less').oneOf('vue').use('css-loader') */
@@ -836,12 +837,12 @@
           {
             test: /\.module\.\w+$/,
             use: [
-              /* config.module.rule('less').oneOf('normal-modules').use('vue-style-loader') */
+              /* config.module.rule('less').oneOf('normal-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('less').oneOf('normal-modules').use('css-loader') */
@@ -874,12 +875,12 @@
           /* config.module.rule('less').oneOf('normal') */
           {
             use: [
-              /* config.module.rule('less').oneOf('normal').use('vue-style-loader') */
+              /* config.module.rule('less').oneOf('normal').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('less').oneOf('normal').use('css-loader') */
@@ -916,12 +917,12 @@
           {
             resourceQuery: /module/,
             use: [
-              /* config.module.rule('stylus').oneOf('vue-modules').use('vue-style-loader') */
+              /* config.module.rule('stylus').oneOf('vue-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('stylus').oneOf('vue-modules').use('css-loader') */
@@ -956,12 +957,12 @@
           {
             resourceQuery: /\?vue/,
             use: [
-              /* config.module.rule('stylus').oneOf('vue').use('vue-style-loader') */
+              /* config.module.rule('stylus').oneOf('vue').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('stylus').oneOf('vue').use('css-loader') */
@@ -993,12 +994,12 @@
           {
             test: /\.module\.\w+$/,
             use: [
-              /* config.module.rule('stylus').oneOf('normal-modules').use('vue-style-loader') */
+              /* config.module.rule('stylus').oneOf('normal-modules').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('stylus').oneOf('normal-modules').use('css-loader') */
@@ -1032,12 +1033,12 @@
           /* config.module.rule('stylus').oneOf('normal') */
           {
             use: [
-              /* config.module.rule('stylus').oneOf('normal').use('vue-style-loader') */
+              /* config.module.rule('stylus').oneOf('normal').use('extract-css-loader') */
               {
-                loader: 'vue-style-loader',
+                loader: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\mini-css-extract-plugin\\dist\\loader.js',
                 options: {
-                  sourceMap: false,
-                  shadowMode: false
+                  hmr: false,
+                  publicPath: '../'
                 }
               },
               /* config.module.rule('stylus').oneOf('normal').use('css-loader') */
@@ -1079,8 +1080,12 @@
             loader: 'cache-loader',
             options: {
               cacheDirectory: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\.cache\\babel-loader',
-              cacheIdentifier: '7e20a5e6'
+              cacheIdentifier: '9405c892'
             }
+          },
+          /* config.module.rule('js').use('thread-loader') */
+          {
+            loader: 'thread-loader'
           },
           /* config.module.rule('js').use('babel-loader') */
           {
@@ -1107,7 +1112,7 @@
                 '.vue'
               ],
               cache: true,
-              cacheIdentifier: 'c4516702',
+              cacheIdentifier: '7b3bd1ce',
               emitWarning: false,
               emitError: false,
               eslintPath: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\node_modules\\eslint',
@@ -1208,7 +1213,7 @@
     new DefinePlugin(
       {
         'process.env': {
-          NODE_ENV: '"development"',
+          NODE_ENV: '"production"',
           BASE_URL: '""',
           MODE: '"C:\\codind\\nodejs\\node.exe"'
         }
@@ -1226,6 +1231,38 @@
           function () { /* omitted long function */ }
         ]
       }
+    ),
+    /* config.plugin('extract-css') */
+    new MiniCssExtractPlugin(
+      {
+        filename: 'css/[name].[contenthash:8].css',
+        chunkFilename: 'css/[name].[contenthash:8].css'
+      }
+    ),
+    /* config.plugin('optimize-css') */
+    new OptimizeCssnanoPlugin(
+      {
+        sourceMap: false,
+        cssnanoOptions: {
+          preset: [
+            'default',
+            {
+              mergeLonghand: false,
+              cssDeclarationSorter: false
+            }
+          ]
+        }
+      }
+    ),
+    /* config.plugin('hash-module-ids') */
+    new HashedModuleIdsPlugin(
+      {
+        hashDigest: 'hex'
+      }
+    ),
+    /* config.plugin('named-chunks') */
+    new NamedChunksPlugin(
+      function () { /* omitted long function */ }
     ),
     /* config.plugin('html') */
     new HtmlWebpackPlugin(
@@ -1245,6 +1282,13 @@
               options: pluginOptions
             }
           }, resolveClientEnv(options, true /* raw */))
+        },
+        minify: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true,
+          collapseBooleanAttributes: true,
+          removeScriptTypeAttributes: true
         },
         template: 'C:\\Users\\user\\WebstormProjects\\vue-Pac-Man\\public\\index.html'
       }
