@@ -1,0 +1,31 @@
+.scene {
+  width: $sceneWidth;
+  height: $sceneHeight;
+  background: #2c3e50;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .start {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font: inherit;
+    font-size: 4.5em;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .start:hover {
+    font-size: 5em;
+  }
+  .start:active {
+    font-size: 4.5em;
+  }
+}
+
+.scene-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

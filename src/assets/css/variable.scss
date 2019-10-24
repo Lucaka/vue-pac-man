@@ -1,0 +1,14 @@
+$characterWidth : 60px;
+$characterHeight : 60px;
+
+$sceneWidth : 800px;
+$sceneHeight : 600px;
+
+
+
+:export {
+  characterWidth: $characterWidth;
+  characterHeight: $characterHeight;
+  sceneWidth:$sceneWidth;
+  sceneHeight:$sceneHeight;
+}

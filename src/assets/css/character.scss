@@ -1,0 +1,20 @@
+.pacman {
+   position: absolute;
+  .pacman-detail {
+    width: $characterWidth;
+    height: $characterHeight;
+    color: yellow;
+  }
+  .pacman--up {
+    transform: rotate(270deg);
+  }
+  .pacman--down {
+    transform: rotate(90deg);
+  }
+  .pacman--left {
+    transform: rotateY(180deg);
+  }
+  .pacman--right {
+    transform: rotate(0);
+  }
+}

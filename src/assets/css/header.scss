@@ -1,0 +1,21 @@
+.header {
+  height: 100px;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction:column;
+
+  .title {
+    width: $sceneWidth;
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .score {
+    width: $sceneWidth;
+    font-size: 20px;
+    text-align: right;
+    margin: auto;
+  }
+}
