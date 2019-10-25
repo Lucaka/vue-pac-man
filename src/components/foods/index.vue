@@ -21,7 +21,7 @@
       }
     },
     updated() {
-      console.log("foods updated")
+      // console.log("foods updated")
       this.createFoodsRect();
     },
     methods : {
