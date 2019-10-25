@@ -1,5 +1,5 @@
-$characterWidth : 60px;
-$characterHeight : 60px;
+$roleWidth : 60px;
+$roleHeight : 60px;
 
 $sceneWidth : 800px;
 $sceneHeight : 600px;
@@ -7,8 +7,8 @@ $sceneHeight : 600px;
 
 
 :export {
-  characterWidth: $characterWidth;
-  characterHeight: $characterHeight;
+  roleWidth: $roleWidth;
+  roleHeight: $roleHeight;
   sceneWidth:$sceneWidth;
   sceneHeight:$sceneHeight;
 }

@@ -1,3 +1,16 @@
+
+
+@mixin clr-button{
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-size: 4.5em;
+  cursor: pointer;
+}
+
+
 .scene {
   width: $sceneWidth;
   height: $sceneHeight;
@@ -13,13 +26,7 @@
   align-items: center;
   justify-content: center;
   .start {
-    color: white;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font: inherit;
-    font-size: 4.5em;
-    cursor: pointer;
+    @include clr-button;
     transition: all .3s;
   }
   .start:hover {
@@ -33,32 +40,40 @@
 .gameover {
   width: $sceneWidth;
   height: $sceneHeight;
-  position: fixed;
+  position: absolute;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   background: rgba(0, 0, 0, 0.5);
 
-  .gameover__button {
-    color: white;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font: inherit;
+  .gameover__string {
+    position: relative;
+    top: -100px;
     font-size: 4.5em;
-    cursor: pointer;
-    transition: all .3s;
-
-
+    color: white;
     z-index: 10;
   }
-  .gameover__button:hover {
-    font-size: 5em;
+
+  .reStart__button {
+    @include clr-button;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    background-color: white;
+    color: black;
+
+    height: 50px;
+    font-size: 2em;
+    transition: all .3s;
+    z-index: 10;
   }
-  .gameover__button:active {
-    font-size: 4.5em;
+  .reStart__button:hover {
+    background-color:#6c716c
   }
+
 }
 

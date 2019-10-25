@@ -22,19 +22,28 @@
     },
     updated() {
       console.log("foods updated")
-
-      // 生產所有食物
-      this.$refs.foods.childNodes.forEach(food => {
-        let rect= new Object();
-        rect.dom = food.children[0];
-        rect.left = food.children[0].getBoundingClientRect().left;
-        rect.top = food.children[0].getBoundingClientRect().top;
-        rect.height = food.children[0].getBoundingClientRect().height;
-        rect.width = food.children[0].getBoundingClientRect().width;
-        this.foodsRect.push(rect);
-      });
-      this.$emit('foodsFinished',this.foodsRect);
+      this.createFoodsRect();
     },
+    methods : {
+      createFoodsRect () {
+        // 生產所有食物位置
+        this.$refs.foods.childNodes.forEach(food => {
+          let rect= new Object();
+          rect.dom = food.children[0];
+          rect.left = food.children[0].getBoundingClientRect().left;
+          rect.top = food.children[0].getBoundingClientRect().top;
+          rect.height = food.children[0].getBoundingClientRect().height;
+          rect.width = food.children[0].getBoundingClientRect().width;
+          this.foodsRect.push(rect);
+        });
+        this.$emit('foodsFinished',this.foodsRect);
+      },
+      resetFoods () {
+        this.$refs.foods.childNodes.forEach(food => {
+          food.children[0].classList.remove('food-hidden')
+        });
+      }
+    }
 
   }
 </script>

@@ -1,8 +1,9 @@
 .pacman {
    position: absolute;
+   will-change: transform;
   .pacman-detail {
-    width: $characterWidth;
-    height: $characterHeight;
+    width: $roleWidth;
+    height: $roleHeight;
     color: yellow;
   }
   .pacman--up {
@@ -22,8 +23,9 @@
 
 .ghost {
   position: absolute;
+  will-change: transform;
   .ghost-detail {
-    width: $characterWidth;
-    height: $characterHeight;
+    width: $roleWidth;
+    height: $roleHeight;
   }
 }
